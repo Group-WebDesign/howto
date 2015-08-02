@@ -46,21 +46,26 @@
 
       <!-- PAGER -->
       <ul class="pager">
+        <li class="previous"><a href="Index.html">Return to Homepage</a></li>
         <li class="next"><a href="Lesson2.html">Next</a></li>
       </ul>
 
       <!-- JUMBOTRON -->
       <div class="jumbotron">
-          <h1>Lesson 1: Class</h1>
-          <p>
-        <p>How to create a new ember class?
-        <p>Use Ember.Object.extend() function to create a new ember class!
-        <img src="./screenshot/object1.png" alt="object" style="width:599px;">
-        <p>Just like othe OOP language, you can define a child in ember!
-        <p>What's more, you can even use a special _super() method to call the parent function that has been overided in the child.
-        <img src="./screenshot/object2.png" alt="object" style="width:599px;">
-            <p>Code credit: Ember.js official guide, "http://guides.emberjs.com/v1.13.0/object-model/classes-and-instances/"
-        </p>
+        <h2>Lesson 1: </h2><h1>Class</h1> <hr>
+        <p style= "text-align:justify; font-size:18px;">
+        How to create a new class in EmberJS? Simple, just use Ember.Object.extend() function to create a new ember class! The picture below shows how to define a new class named <code>Person</code> with a method of <code>say()</code> in it.
+        <br><br>
+        <img src="./screenshot/object1.png" alt="object" style="max-width:100%; max-height:100%;">
+        <figcaption>Figure 1 taken from "http://guides.emberjs.com/v1.12.0/object-model/classes-and-instances/"</figcaption>
+        <br>
+        <p style= "text-align:justify; font-size:18px;">
+        Now, what if user wants to create a subclass or wants to define a class after creating one? Take a look at the snippet of code below carefully and follow the explanation. <br><br> 
+        <img src="./screenshot/object2.png" alt="object" style="max-width:100%; max-height:100%;">
+        <figcaption>Figure 2 taken from "http://guides.emberjs.com/v1.12.0/object-model/classes-and-instances/"</figcaption>
+        <br>
+        <p style= "text-align:justify; font-size:18px;">
+        First, the <b>codeline 1 to 6 </b> basically similar to the previous example which just defining a new class name person. Then in <b>codeline 8 to 12</b>,  the user is creating a subclass. However, there is one requirement if want to use subclass, user must call special <code>_super()</code> method in order to access the implementation of parent class. Next, in <b>codeline 14 to 16</b>, the user is creating an instance from that "<i>Soldier</i>" subclass by calling a <code>create()</code> method. This simply means that all the properties from the predefined class will be available to the instance that user just created. That's why in the last <b>codeline 18</b>, Yehuda Katz will say "Yes" (from the paramater)and "Sir" from the predefined code in subclass.
       </div>
 
       <!-- PAGINATION -->

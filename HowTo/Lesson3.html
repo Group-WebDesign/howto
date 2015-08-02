@@ -50,9 +50,26 @@
       </ul>
 
       <div class="jumbotron">
-        <h1>Lesson 3</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p>
+        <h2>Lesson3: </h2><h1>Observers</h1> <hr>
+        <figure>
+          <img src="http://puu.sh/jlt6D/69c9487daa.png" style="max-width:100%; max-height:100%;"></img>
+          <figcaption>Fig.1 taken from http://guides.emberjs.com/v1.12.0/object-model/observers/</figcaption>
+        </figure> <br>
+        <p style= "text-align:justify; font-size:18px;"> Observers is the reason why EmberJS could make the data binding possible. It watches for changes in the code, and directly fire as soon as the properties that it <code>observes</code> changes. That's why observers is called synchronous due to this behavior. However, observer is not the only method that Ember uses when it respond to a change. There is another method called <code>property</code> which works similarly. Thus, it is a good thing to be able to distinguish the difference between <code>property</code> and <code>observer</code> too in this page. <br><br> Take a look at the picture above, notice that two different methods being applied at once, which are <code>computed</code> a.k.a (<code>property</code>) and <code>observer</code>. As it shown in the picture, fullName function is defined by <code>property</code> and fullNameChanged is defined by <code>observer</code>. In the first method (<code>property</code>), when user changes either the firstName or lastName, fullName property will undergo an update following the template where it bounds. Therefore, this <code>property</code> is simply only provide updated value for what it watches, not anything else. On the other hand, in <code>observer</code> method, when user changes either firstName or lastName, the <code>observer</code> will see this changes and perform an action. Sort of to say that it will fire whatever codes written in the body of the method, instead of just watching the changes like <code>property</code> does. In this example, it will fire the <code>person.set</code> *line 23
+        <br><br>
+        For first time learning, it may seems confusing about <code>observer</code> method because it is really similar to <code>property</code>. However, to simplify things, just remember this simple conclusion. Use <code>observer</code> when you only want to manipulate things, but use <code>property</code> instead when you need to use a return value later on since only <code>property</code> can <code>return</code> something.
+        <br><br>
+        <b>NEXT STEP: </b> Watch this video! This is one of the most helpful video that will tell the difference between <code>property</code> and <code>observer</code> since he gives the example with live coding.
+        <br><br>
+        <iframe width="580" height="315" src="https://www.youtube.com/embed/P-QjMSPZD-w" frameborder="0" allowfullscreen></iframe>
+        </font></p> 
+        <h6>
+        Sources: <br>
+        <a href = "http://guides.emberjs.com/v1.13.0/object-model/observers/"> Link 1 </a>
+        <a href = "http://www.thesoftwaresimpleton.com/blog/2015/04/07/observables-evil/"> Link 2 </a>
+        <a href = "http://blog.learningspaces.io/property-or-observer-emberjs-explained/"> Link 3 </a>
+        <a href = "https://medium.com/the-ember-way/ember-js-reactive-programming-computed-properties-and-observers-cf80c2fbcfc">Link 4</a>
+        </h6>
       </div>
 
       <!-- PAGINATION -->

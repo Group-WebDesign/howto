@@ -50,16 +50,18 @@
       </ul>
 
       <div class="jumbotron">
-        <h1>Lesson 2: Binding</h1>
-        <p class="lead">Ember.js can bind variables together, meaning that when one variable is changed the other is changed as well. This can be incredibly useful for live updating to the user. Ember.js is unique in that it allows you to bind variables across objects too. Below is some example code for binding:</p>
-		<img src="screenshot/BindingExample.jpg" style="width:600px;">
-		<figcaption>figure 1 taken from http://guides.emberjs.com/v1.10.0/object-model/bindings/</figcaption>
-		<p>In this example the variables householdIncome for the objects husband and wife are bound using line 6 "householdIncome: Ember.computed.alias('wife.houseHoldIncome')". So when the husband or the wife gets a raise the household income for both of them is adjusted to the new value.</p>
-		<p>Another binding feature for Ember.js is One-Way-Binding. This allows a variable to be bound to another variable but not vice-versa. So, for example, changing variable foo will change variable bar, but changing variable bar will not change variable foo. Below is example code for One-Way-Binding:</p>
-		<img src="screenshot/OneWayBindingExample.jpg" style="width:600px;">
-		<figcaption>figure 2 taken from http://guides.emberjs.com/v1.10.0/object-model/bindings/</figcaption>
-		<p>In this example the variable userName in the object UserView is bound to variable fullName in the object user. The binding is one way because of line 6 "userName: Ember.computed.oneWay('user.fullName')". So when the fullName of user is set to Krang Gates the userName is also set to Krang Gates, but when userName is set to Truckasaurus Gates fullName is not changed and remains Krang Gates.</p>
-	  </div>
+        <h2>Lesson 2: </h2><h1>Binding</h1> <hr>
+        <p class="lead" style= "text-align:justify; font-size:18px;">Ember.js can bind variables together, meaning that when one variable is changed the other is changed as well. This can be incredibly useful for live updating to the user. Ember.js is unique in that it allows you to bind variables across objects too. Below is some example code for binding:</p>
+    <img src="screenshot/BindingExample.jpg" style="max-width:100%; max-height:100%;">
+    <figcaption>figure 1 taken from http://guides.emberjs.com/v1.12.0/object-model/bindings/</figcaption>
+    <br>
+    <p style= "text-align:justify; font-size:18px;">In this example the variables householdIncome for the objects husband and wife are bound using line 6 "householdIncome: Ember.computed.alias('wife.houseHoldIncome')". So when the husband or the wife gets a raise the household income for both of them is adjusted to the new value.</p>
+    <p style= "text-align:justify; font-size:18px;">Another binding feature for Ember.js is One-Way-Binding. This allows a variable to be bound to another variable but not vice-versa. So, for example, changing variable foo will change variable bar, but changing variable bar will not change variable foo. Below is example code for One-Way-Binding:</p>
+    <img src="screenshot/OneWayBindingExample.jpg" style="max-width:100%; max-height:100%;">
+    <figcaption>figure 2 taken from http://guides.emberjs.com/v1.12.0/object-model/bindings/</figcaption>
+    <br>
+    <p style= "text-align:justify; font-size:18px;">In this example the variable userName in the object UserView is bound to variable fullName in the object user. The binding is one way because of line 6 "userName: Ember.computed.oneWay('user.fullName')". So when the fullName of user is set to Krang Gates the userName is also set to Krang Gates, but when userName is set to Truckasaurus Gates fullName is not changed and remains Krang Gates.</p>
+    </div>
 
       <div class="text-center">
         <ul class="pagination">

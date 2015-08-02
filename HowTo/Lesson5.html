@@ -46,16 +46,21 @@
 
       <ul class="pager">
         <li class="previous"><a href="Lesson4.html">Previous</a></li>
+        <li class="next"><a href="Index.html">Return to Homepage</a></li>
       </ul>
 
       <div class="jumbotron">
-          <h1>Lesson 5:Controller</h1>
-        <p> Controllers allow you to decorate your models with display logic.
-        <p> Controllers save the properties that do not have to be stored in the server.
-        <img src="./screenshot/controller1.png" alt="controller1" style="width:599px;">
-        <p> In ember, controllers provide templates with properties to decorate the models.
-        <img src="./screenshot/controller2.png" alt="controller1" style="width:599px;">
-            <p> Code credit: Ember.js official guide, "http://guides.emberjs.com/v1.13.0/controllers/"
+        <h2>Lesson 5: </h2><h1>Controller</h1> <hr>
+        <p style= "text-align:justify; font-size:18px;">Controllers in EmberJS allows the user to decorate his/ her models while providing a user interaction, without having a need to save the application to the server. Therefore, the use of controller are to decorate a model returned by the route and to list to an action/s performed by the user. <br><br>
+        <img src="./screenshot/controller1.png" alt="controller1" style="max-width:100%; max-height:100%;">
+        <figcaption>Figure 1 taken from "http://guides.emberjs.com/v1.13.0/controllers/"</figcaption>
+        <br>
+        <p style= "text-align:justify; font-size:18px;">Take a look at the snippet of code above, whatever happened in these lines of code is all just a display concern (which is to display/hide a button). The controller gives a separation between logic related for user data and logic related for user display. In other words, user can test the display interface by all means without have to worry that his/her other code for data will be messed up.
+        <br><br>
+        <img src="./screenshot/controller2.png" alt="controller1" style="max-width:100%; max-height:100%;">
+        <figcaption>Figure 2 taken from "http://guides.emberjs.com/v1.12.0/controllers/"</figcaption>
+        <br>
+        <p style= "text-align:justify; font-size:18px;">The diagram above can tell EmberJS allow user to modify the user interface without disturbing the other data code. It's because of this one way line (direct chain of command) from template to model. Notice that templates will always be linked to controllers not models. With this behavior, it gives an advantage to separate display properties with model properties. Thus, logic related data and logic related display will never interact with each other and create a clean easy setup for user to code.
       </div>
 
       <!-- PAGINATION -->
